@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Prescription Interface</title>
+  <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Medicine Prescription Interface</h2>
+    
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter your age" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="symptom">Symptom:</label>
+      <input type="text" id="symptom" placeholder="Enter a symptom">
+      <button onclick="addSymptom()">Add Symptom</button>
+    </div>
+
+    <ul id="symptoms-list"></ul>
+
+    <button id="prescribe-button" onclick="prescribeMedicine()">Get Prescription</button>
+
+    <div id="prescription-output" class="prescription-output"></div>
+  </div>
+
+  <script src="aayur.js"></script>
+</body>
+</html>
